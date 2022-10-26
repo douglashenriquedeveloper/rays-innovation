@@ -1,0 +1,99 @@
+:root {
+    --CorDeFundo: #0000ff;
+    --corDaFonte: #fff;
+    --corDeDestaque: #ffff00;
+    --Fonte: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: var(--CorDeFundo);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#aDoHeader {
+    height: 90px;
+}
+
+.altDalogo {
+    color: var(--corDaFonte);
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding-right: 30px;
+
+}
+
+.AsDoLisDoUlDoNavDoHeader {
+    color: var(--corDaFonte);
+    text-decoration: none;
+    font-family: var(--Fonte);
+    font-size: 20px;
+}
+
+#divDeBuscaPc {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 20px;
+}
+
+#inputDaDivDeBusca {
+    padding: 0px;
+    padding-left: 3px;
+    border: none;
+    outline: none;
+    background-color: var(--CorDeFundo);
+    color: var(--corDaFonte);
+    font-family: var(--Fonte);
+    font-size: 20px;
+    width: 243px;
+}
+
+#imgDaDivDeBusca {
+    padding-right: 3px;
+}
+
+#buttonNavMobile {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+
+#navMobile {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+
+    #navPc {
+        display: none;
+    }
+
+    #divDeBuscaPc {
+        display: none;
+    }
+
+    #buttonNavMobile {
+        display: block;
+    }
+}

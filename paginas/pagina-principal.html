@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <title>Rays Innovation</title>
+</head>
+
+<body>
+    <script>
+        function quandoMouserEntrarEmArtigos() {
+            let mudarColor = document.getElementById("interacaoArtigos")
+            mudarColor.style.color = "#ffff00"
+        }
+
+        function quandoMouserSairDeArtigos() {
+            let voltarCor = document.getElementById("interacaoArtigos")
+            voltarCor.style.color = "#fff"
+        }
+
+        function quandoMouserEntrarEmProdutosFisicos() {
+            let mudarColor = document.getElementById("interacaoProdutosFisicos")
+            mudarColor.style.color = "#ffff00"
+        }
+
+        function quandoMouserSairDeProdutosFisicos() {
+            let voltarCor = document.getElementById("interacaoProdutosFisicos")
+            voltarCor.style.color = "#fff"
+        }
+
+        function quandoMouserEntrarEmInfoProdutos() {
+            let mudarColor = document.getElementById("interacaoInfoProdutos")
+            mudarColor.style.color = "#ffff00"
+        }
+
+        function quandoMouserSairDeInfoProdutos() {
+            let voltarCor = document.getElementById("interacaoInfoProdutos")
+            voltarCor.style.color = "#fff"
+        }
+
+        function quandoMouserEntrarEmServicos() {
+            let mudarColor = document.getElementById("interacaoServicos")
+            mudarColor.style.color = "#ffff00"
+        }
+
+        function quandoMouserSairDeServicos() {
+            let voltarCor = document.getElementById("interacaoServicos")
+            voltarCor.style.color = "#fff"
+        }
+
+        function quandoMouserPassarEmCimaDaLogo() {
+            document.getElementById("interacaoLogo").src = '../imagens/logo-2.0.png'
+        }
+
+        function quandoMouserNaoPassarEmCimaDaLogo() {
+            document.getElementById("interacaoLogo").src = '../imagens/logo-1.0.png'
+        }
+
+        function quandoMouserPassarEmCimaDaLupaDeBusca() {
+            document.getElementById("interacaoLupaDeBusca").src = '../imagens/lupa-de-busca-2.0.png'
+        }
+
+        function quandoMouserNaoPassarEmCimaDaLupaDeBusca() {
+            document.getElementById("interacaoLupaDeBusca").src = '../imagens/lupa-de-busca-1.0.png'
+        }
+    </script>
+    <header>
+        <a id="aDoHeader" href="pagina-principal.html">
+            <img class="altDalogo" id="interacaoLogo" onmouseover="quandoMouserPassarEmCimaDaLogo()"
+                onmouseout="quandoMouserNaoPassarEmCimaDaLogo()" src="../imagens/logo-1.0.png"
+                alt="Logo Rays Innovation">
+        </a>
+        <nav id="navPc">
+            <ul>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoArtigos"
+                        onmouseenter="quandoMouserEntrarEmArtigos()" onmouseout="quandoMouserSairDeArtigos()"
+                        href="">Artigos</a>
+                </li>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoProdutosFisicos"
+                        onmouseenter="quandoMouserEntrarEmProdutosFisicos()"
+                        onmouseout="quandoMouserSairDeProdutosFisicos()" href="">Produtos físicos</a>
+                </li>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoInfoProdutos"
+                        onmouseenter="quandoMouserEntrarEmInfoProdutos()" onmouseout="quandoMouserSairDeInfoProdutos()"
+                        href="">Info produtos</a>
+                </li>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoServicos"
+                        onmouseenter="quandoMouserEntrarEmServicos()" onmouseout="quandoMouserSairDeServicos()"
+                        href="">Serviços</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="divDeBuscaPc">
+            <img class="imgDaDivDeBusca" id="interacaoLupaDeBusca" src="../imagens/lupa-de-busca-1.0.png" alt="Lupa de busca"
+                onmouseover="quandoMouserPassarEmCimaDaLupaDeBusca()" onmouseout="quandoMouserNaoPassarEmCimaDaLupaDeBusca()">
+            <input id="inputDaDivDeBusca" type="text" placeholder="Buscar artigos e produtos...">
+        </div>
+        <button id="buttonNavMobile"><img src="../imagens/menu-mobile-1.0.png" alt="Menu mobile"></button>
+        <nav id="navMobile">
+            <ul>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoArtigos"
+                        onmouseenter="quandoMouserEntrarEmArtigos()" onmouseout="quandoMouserSairDeArtigos()"
+                        href="">Artigos</a>
+                </li>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoProdutosFisicos"
+                        onmouseenter="quandoMouserEntrarEmProdutosFisicos()"
+                        onmouseout="quandoMouserSairDeProdutosFisicos()" href="">Produtos físicos</a>
+                </li>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoInfoProdutos"
+                        onmouseenter="quandoMouserEntrarEmInfoProdutos()" onmouseout="quandoMouserSairDeInfoProdutos()"
+                        href="">Info produtos</a>
+                </li>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoServicos"
+                        onmouseenter="quandoMouserEntrarEmServicos()" onmouseout="quandoMouserSairDeServicos()"
+                        href="">Serviços</a>
+                </li>
+            </ul>
+            <div id="divDeBuscaPc">
+                <img class="imgDaDivDeBusca" id="interacaoLupaDeBusca" src="../imagens/lupa-de-busca-1.0.png"
+                    alt="Lupa de busca" onmouseover="quandoMouserPassarEmCimaDaLupaDeBusca()"
+                    onmouseout="quandoMouserNaoPassarEmCimaDaLupaDeBusca()">
+                <input id="inputDaDivDeBusca" type="text" placeholder="Buscar artigos e produtos...">
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
