@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/estilos-header.css">
+    <link rel="stylesheet" href="../estilos/estilos-pagina-de-manutencao.css">
     <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
     <title>Rays Innovation</title>
 </head>
 
 <body>
+    <!--header-->
     <script>
         function quandoMouserEntrarEmArtigos() {
             let mudarColor = document.getElementById("interacaoArtigos")
@@ -68,6 +70,23 @@
             document.getElementById("interacaoLupaDeBusca").src = '../imagens/lupa-de-busca-1.0.png'
         }
     </script>
+    <!--header-->
+    <!--Pagina de manutenção-->
+    <script>
+        function interacaoEntraNoaDaPaginaDeManutencao(){
+            let quandoMouseEntrar = document.getElementById("aDaPaginaDeManutencao")
+            quandoMouseEntrar.style.backgroundColor = "#ffff00"
+            quandoMouseEntrar.style.color = "#0000ff"
+            quandoMouseEntrar.style.borderStyle = "solid"
+            quandoMouseEntrar.style.borderWidth = "3px"
+            quandoMouseEntrar.style.borderColor = "0000ff"
+        }
+        
+        function interacaoSairDoaDaPaginaDeManutencao(){
+            let quandoMouseSair = document.getElementById("aDaPaginaDeManutencao")
+            quandoMouseSair.style = "0000ff"
+        }
+    </script>
     <header>
         <a id="aDoHeader" href="pagina-principal.html">
             <img class="altDalogo" id="interacaoLogo" onmouseover="quandoMouserPassarEmCimaDaLogo()"
@@ -77,25 +96,24 @@
         <nav id="navPc">
             <ul>
                 <li>
-                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoArtigos" href="pagina-de-manutecao.html"
-                        onmouseenter="quandoMouserEntrarEmArtigos()" onmouseout="quandoMouserSairDeArtigos()">
-                        Artigos</a>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoArtigos"
+                        onmouseenter="quandoMouserEntrarEmArtigos()" onmouseout="quandoMouserSairDeArtigos()"
+                        href="">Artigos</a>
                 </li>
                 <li>
-                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoProdutosFisicos" href="pagina-de-manutecao.html"
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoProdutosFisicos"
                         onmouseenter="quandoMouserEntrarEmProdutosFisicos()"
-                        onmouseout="quandoMouserSairDeProdutosFisicos()">Produtos
-                        físicos</a>
+                        onmouseout="quandoMouserSairDeProdutosFisicos()" href="">Produtos físicos</a>
                 </li>
                 <li>
-                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoInfoProdutos" href="pagina-de-manutecao.html"
-                        onmouseenter="quandoMouserEntrarEmInfoProdutos()"
-                        onmouseout="quandoMouserSairDeInfoProdutos()">Info produtos</a>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoInfoProdutos"
+                        onmouseenter="quandoMouserEntrarEmInfoProdutos()" onmouseout="quandoMouserSairDeInfoProdutos()"
+                        href="">Info produtos</a>
                 </li>
                 <li>
-                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoServicos" href="pagina-de-manutecao.html"
-                        onmouseenter="quandoMouserEntrarEmServicos()"
-                        onmouseout="quandoMouserSairDeServicos()">Serviços</a>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoServicos"
+                        onmouseenter="quandoMouserEntrarEmServicos()" onmouseout="quandoMouserSairDeServicos()"
+                        href="">Serviços</a>
                 </li>
             </ul>
         </nav>
@@ -111,7 +129,7 @@
                 <li>
                     <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoArtigos"
                         onmouseenter="quandoMouserEntrarEmArtigos()" onmouseout="quandoMouserSairDeArtigos()"
-                        href="">Artigos</a>
+                        href="pagina-de-manutecao.html">Artigos</a>
                 </li>
                 <li>
                     <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoProdutosFisicos"
@@ -136,7 +154,16 @@
                 <input id="inputDaDivDeBusca" type="text" placeholder="Buscar artigos e produtos...">
             </div>
         </nav>
-    </header>
+    </header>   
+    <main>
+        <section>
+            <p>
+                Esta página está em manutenção por tempo indeterminado.
+            </p>
+            <a id="aDaPaginaDeManutencao" href="pagina-principal.html" onmouseenter="interacaoEntraNoaDaPaginaDeManutencao()"
+                onmouseout="interacaoSairDoaDaPaginaDeManutencao()">Voltar para página incial</a>
+        </section>
+    </main>
 </body>
 
 </html>
