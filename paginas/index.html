@@ -52,6 +52,16 @@
             voltarCor.style.color = "#fff"
         }
 
+        function quandoMouserEntrarEmCursos() {
+            let mudarColor = document.getElementById("interacaoCursos")
+            mudarColor.style.color = "#ffff00"
+        }
+
+        function quandoMouserSairDeCursos() {
+            let voltarCor = document.getElementById("interacaoCursos")
+            voltarCor.style.color = "#fff"
+        }
+
         function quandoMouserPassarEmCimaDaLogo() {
             document.getElementById("interacaoLogo").src = '../imagens/logo-2.0.png'
         }
@@ -97,6 +107,10 @@
                         onmouseenter="quandoMouserEntrarEmServicos()"
                         onmouseout="quandoMouserSairDeServicos()">Serviços</a>
                 </li>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoCursos" href="pagina-de-manutecao.html"
+                        onmouseenter="quandoMouserEntrarEmCursos()" onmouseout="quandoMouserSairDeCursos()">Cursos</a>
+                </li>
             </ul>
         </nav>
         <div id="divDeBuscaPc">
@@ -116,7 +130,8 @@
                 <li>
                     <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoProdutosFisicos"
                         onmouseenter="quandoMouserEntrarEmProdutosFisicos()"
-                        onmouseout="quandoMouserSairDeProdutosFisicos()" href="pagina-de-manutecao.html">Produtos físicos</a>
+                        onmouseout="quandoMouserSairDeProdutosFisicos()" href="pagina-de-manutecao.html">Produtos
+                        físicos</a>
                 </li>
                 <li>
                     <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoInfoProdutos"

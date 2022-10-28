@@ -54,6 +54,16 @@
             voltarCor.style.color = "#fff"
         }
 
+        function quandoMouserEntrarEmCursos() {
+            let mudarColor = document.getElementById("interacaoCursos")
+            mudarColor.style.color = "#ffff00"
+        }
+
+        function quandoMouserSairDeCursos() {
+            let voltarCor = document.getElementById("interacaoCursos")
+            voltarCor.style.color = "#fff"
+        }
+
         function quandoMouserPassarEmCimaDaLogo() {
             document.getElementById("interacaoLogo").src = '../imagens/logo-2.0.png'
         }
@@ -73,7 +83,7 @@
     <!--header-->
     <!--Pagina de manutenção-->
     <script>
-        function interacaoEntraNoaDaPaginaDeManutencao(){
+        function interacaoEntraNoaDaPaginaDeManutencao() {
             let quandoMouseEntrar = document.getElementById("aDaPaginaDeManutencao")
             quandoMouseEntrar.style.backgroundColor = "#ffff00"
             quandoMouseEntrar.style.color = "#0000ff"
@@ -81,8 +91,8 @@
             quandoMouseEntrar.style.borderWidth = "3px"
             quandoMouseEntrar.style.borderColor = "0000ff"
         }
-        
-        function interacaoSairDoaDaPaginaDeManutencao(){
+
+        function interacaoSairDoaDaPaginaDeManutencao() {
             let quandoMouseSair = document.getElementById("aDaPaginaDeManutencao")
             quandoMouseSair.style = "0000ff"
         }
@@ -114,6 +124,10 @@
                     <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoServicos"
                         onmouseenter="quandoMouserEntrarEmServicos()" onmouseout="quandoMouserSairDeServicos()"
                         href="">Serviços</a>
+                </li>
+                <li>
+                    <a class="AsDoLisDoUlDoNavDoHeader" id="interacaoCursos" href="pagina-de-manutecao.html"
+                        onmouseenter="quandoMouserEntrarEmCursos()" onmouseout="quandoMouserSairDeCursos()">Cursos</a>
                 </li>
             </ul>
         </nav>
@@ -154,7 +168,7 @@
                 <input id="inputDaDivDeBusca" type="text" placeholder="Buscar artigos e produtos...">
             </div>
         </nav>
-    </header>   
+    </header>
     <main>
         <section>
             <p>
