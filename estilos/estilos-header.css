@@ -14,10 +14,10 @@ header {
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-#aDoHeader {
+#aDaLogo {
     height: 90px;
 }
 
@@ -57,44 +57,25 @@ li {
     height: 20px;
 }
 
+#imgDaDivDeBusca {
+    padding-right: 3px;
+}
+
+
 #inputDaDivDeBusca {
     padding: 0px;
     padding-left: 3px;
     border: none;
+    border-left: solid 3px #fff;
+    border-radius: 25px;
     outline: none;
     background-color: var(--CorDeFundo);
     color: var(--corDaFonte);
     font-family: var(--Fonte);
     font-size: 20px;
-    width: 243px;
+    width: 200px;
 }
 
-#imgDaDivDeBusca {
-    padding-right: 3px;
-}
-
-#buttonNavMobile {
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    display: none;
-}
-
-#navMobile {
-    display: none;
-}
-
-@media (min-width: 320px) and (max-width: 900px) {
-
-    #navPc {
-        display: none;
-    }
-
-    #divDeBuscaPc {
-        display: none;
-    }
-
-    #buttonNavMobile {
-        display: block;
-    }
+#inputDaDivDeBusca::placeholder{
+    color: #fff;
 }
