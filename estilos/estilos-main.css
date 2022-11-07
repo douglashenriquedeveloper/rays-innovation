@@ -1,0 +1,20 @@
+:root {
+    --CorDeFundo: #0000ff;
+    --corDaFonte: #fff;
+    --corDeDestaque: #ffff00;
+    --Fonte: Helvetica, Arial, sans-serif;
+}  
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+p{
+    color: #000;
+    font-family: var(--Fonte);
+    font-size: 20px;
+}
+

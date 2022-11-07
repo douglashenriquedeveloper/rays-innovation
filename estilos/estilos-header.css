@@ -49,7 +49,7 @@ li {
     font-weight: 600;
 }
 
-#divDeBuscaPc {
+.divDeBusca {
     display: flex;
     justify-items: center;
     align-items: center;

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/estilos-header.css">
+    <link rel="stylesheet" href="../estilos/estilos-main.css">
     <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
     <title>Rays Innovation</title>
 </head>
@@ -21,12 +22,12 @@
             document.getElementById("interacaoLogo").src = '../imagens/logo-1.0.png'
         }
 
-        function quandoMouserPassarEmCimaDaLupaDeBusca() {
-            document.getElementById("interacaoLupaDeBusca").src = '../imagens/lupa-de-busca-2.0.png'
+        function quandoMouserPassarEmCimaDaDivDeBusca() {
+            document.getElementById("interacaoImgDaDivDeBusca").src = '../imagens/lupa-de-busca-2.0.png'
         }
 
-        function quandoMouserNaoPassarEmCimaDaLupaDeBusca() {
-            document.getElementById("interacaoLupaDeBusca").src = '../imagens/lupa-de-busca-1.0.png'
+        function quandoMouserNaoPassarEmCimaDadivDeBusca() {
+            document.getElementById("interacaoImgDaDivDeBusca").src = '../imagens/lupa-de-busca-1.0.png'
         }
     </script>
     <!--header-->
@@ -38,15 +39,22 @@
         </a>
         <nav>
             <ul>
-                <div id="divDeBuscaPc">
-                    <img class="imgDaDivDeBusca" id="interacaoLupaDeBusca" src="../imagens/lupa-de-busca-1.0.png"
-                        alt="Lupa de busca" onmouseover="quandoMouserPassarEmCimaDaLupaDeBusca()"
-                        onmouseout="quandoMouserNaoPassarEmCimaDaLupaDeBusca()">
+                <div class="divDeBusca" onmouseover="quandoMouserPassarEmCimaDaDivDeBusca()"
+                    onmouseout="quandoMouserNaoPassarEmCimaDadivDeBusca()">
+                    <img class="imgDaDivDeBusca" id="interacaoImgDaDivDeBusca"  src="../imagens/lupa-de-busca-1.0.png"
+                        alt="Lupa de busca">
                     <input id="inputDaDivDeBusca" type="text" placeholder="Procure um artigo...">
                 </div>
             </ul>
         </nav>
     </header>
+    <main>
+        <section>
+            <p>
+                Esta página está em manutenção por tempo indeterminado.
+            </p>
+        </section>
+    </main>
 </body>
 
 </html>
